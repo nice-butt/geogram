@@ -2585,9 +2585,9 @@ namespace GEO {
             default:
                 geo_assert_not_reached;
         }
-        if(CmdLine::get_arg("algo:predicates") == "exact") {
-            result->set_exact_predicates(true);
-        } 
+        //if(CmdLine::get_arg("algo:predicates") == "exact") {
+        //    result->set_exact_predicates(true);
+        //} 
         return result;
     }
 
