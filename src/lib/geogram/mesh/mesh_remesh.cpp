@@ -70,8 +70,8 @@ namespace GEO {
         index_t Newton_m
     ) {
 
-        geo_cite("DBLP:journals/cgf/YanLLSW09");
-        geo_cite("DBLP:conf/imr/LevyB12");
+        //geo_cite("DBLP:journals/cgf/YanLLSW09");
+        //geo_cite("DBLP:conf/imr/LevyB12");
 	
         if(dim == 0) {
             dim = coord_index_t(M_in.vertices.dimension());
