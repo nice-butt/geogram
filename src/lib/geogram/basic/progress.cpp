@@ -249,7 +249,7 @@ namespace GEO {
     ) :
         task_name_(task_name),
         start_time_(SystemStopwatch::now()),
-        quiet_(Logger::instance()->is_quiet()),
+        quiet_(true),
         max_steps_(std::max(index_t(1), max_steps)),
         step_(0),
         percent_(0)
