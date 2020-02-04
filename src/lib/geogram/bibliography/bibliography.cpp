@@ -171,7 +171,7 @@ namespace GEO {
 	    const char* ref, const char* file, int line, const char* function,
 	    const char* info
 	) {
-	    std::string shortfile = file;
+	    /*std::string shortfile = file;
 	    size_t pos = shortfile.find("src/lib/");
 	    if(pos != std::string::npos) {
 		shortfile = shortfile.substr(pos+8, shortfile.length()-pos-8);
@@ -214,7 +214,7 @@ namespace GEO {
 		Logger::out("Bibliography")
 		    << "[" << ref << "] cited from: "
 		    << context << std::endl;
-	    }
+	    }*/
 	}
 
 	void reset_citations() {
