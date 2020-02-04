@@ -797,10 +797,11 @@ namespace {
             }
 
             // If the sequence is smaller than 1024, use sequential sorting
-            if(index_t(e - b) < 1024) {
+            //NOTE(nice-butt): the usage of parallel sorting is prohibited
+            //if(index_t(e - b) < 1024) {
                 sort<0, false, false, false>(M_, b, e);
                 return;
-            }
+            //}
 
             // Parallel sorting (2 then 4 then 8 sorts in parallel)
 
