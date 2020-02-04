@@ -91,6 +91,9 @@ namespace GEO {
          }
          CentroidalVoronoiTesselation CVT(&M_in, R3_embedding, dim);
         */
+
+        std::cout << "Mesh stats: \nVertices: " << M_in.vertices.nb() 
+            << "\nTriangles: " << M_in.facets.nb() << std::endl;
        
         if(nb_points == 0) {
             nb_points = M_in.vertices.nb();
