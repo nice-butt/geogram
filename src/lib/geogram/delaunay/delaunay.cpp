@@ -158,7 +158,7 @@ namespace GEO {
     Delaunay* Delaunay::create(
         coord_index_t dim, const std::string& name_in
     ) {
-
+        std::cout << "\n\nDelaunay name: " << name_in << std::endl << std::endl;
         std::string name = name_in;
         if(name == "default") {
             name = CmdLine::get_arg("algo:delaunay");

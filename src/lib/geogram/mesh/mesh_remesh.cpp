@@ -81,7 +81,7 @@ namespace GEO {
 	
         Stopwatch W("Remesh");
 
-        CentroidalVoronoiTesselation CVT(&M_in);
+        CentroidalVoronoiTesselation CVT(&M_in, 0, "BDEL");
        
         /*
          * TODO: reactivate projection, debug
