@@ -140,19 +140,19 @@ namespace GEO {
         CVT.RVD()->delete_threads();
 
         CVT.set_use_RVC_centroids(
-            CmdLine::get_arg_bool("remesh:RVC_centroids")
+            true//CmdLine::get_arg_bool("remesh:RVC_centroids")
         );
-        bool multi_nerve = CmdLine::get_arg_bool("remesh:multi_nerve");
+        bool multi_nerve = true;//CmdLine::get_arg_bool("remesh:multi_nerve");
 
-        Logger::out("Remesh") << "Computing RVD..." << std::endl;
+        std::cout << "Computing RVD..." << std::endl;
 
         CVT.compute_surface(&M_out, multi_nerve);
-        if(CmdLine::get_arg_bool("dbg:save_ANN_histo")) {
+        /*if(CmdLine::get_arg_bool("dbg:save_ANN_histo")) {
             Logger::out("ANN")
                 << "Saving histogram to ANN_histo.dat" << std::endl;
             std::ofstream out("ANN_histo.dat");
             CVT.delaunay()->save_histogram(out);
-        }
+        }*/
     }
 
     /************************************************************************/
