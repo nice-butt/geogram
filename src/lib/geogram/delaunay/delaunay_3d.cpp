@@ -87,7 +87,7 @@ namespace GEO {
     Delaunay3d::Delaunay3d(coord_index_t dimension) :
         Delaunay(dimension)
     {
-	geo_cite_with_info(
+	/*geo_cite_with_info(
 	    "DBLP:journals/cj/Bowyer81",
 	    "One of the two initial references to the algorithm, "
 	    "discovered independently and simultaneously by Bowyer and Watson."
@@ -121,7 +121,7 @@ namespace GEO {
 	    "DBLP:journals/ijfcs/DevillersPT02",
 	    "Analysis of the different versions of the line walk algorithm "
 	    " used by \\verb|locate()|."
-	);
+	);*/
 	
         if(dimension != 3 && dimension != 4) {
             throw InvalidDimension(dimension, "Delaunay3d", "3 or 4");
