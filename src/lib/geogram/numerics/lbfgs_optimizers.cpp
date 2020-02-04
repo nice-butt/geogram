@@ -182,8 +182,8 @@ namespace GEO {
         INIT_HLBFGS(parameter, hlbfgs_info);
         hlbfgs_info[3] = b_m1qn3_ ? 1 : 0; // determines whether we use m1qn3
         hlbfgs_info[4] = (int) max_iter_;  // max iterations
-        hlbfgs_info[5] =
-            GEO::CmdLine::get_arg_bool("debug") ? 1 : 0;  // verbose
+        hlbfgs_info[5] = 0;
+            //GEO::CmdLine::get_arg_bool("debug") ? 1 : 0;  // verbose
         hlbfgs_info[10] = b_cg_ ? 1 : 0; // determines whether we use cg
         parameter[5] = 0; // disabled
         parameter[6] = epsg_;
